@@ -1,0 +1,490 @@
+#loader { 
+      border: 12px solid #f3f3f3; 
+      border-radius: 50%; 
+      border-top: 12px solid #000; 
+      width: 70px; 
+      height: 70px; 
+      animation: spin 1s linear infinite; 
+    } 
+    
+    @keyframes spin { 
+      100% { 
+        transform: rotate(360deg); 
+      } 
+    } 
+    
+    .center { 
+      position: absolute; 
+      top: 0; 
+      bottom: 0; 
+      left: 0; 
+      right: 0; 
+      margin: auto; 
+    }
+    html{
+      scroll-behavior: smooth;
+    }
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background-color:white ;
+  color:#26527d ;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 90px;
+}
+
+#myBtn:hover {
+  background-color: white;
+  color: #003366;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color:white; 
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20	0px;
+}
+
+.sidenav .links a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+ 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+ color:  #26527d;
+ font-weight: bold;
+  display: block;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+
+.sidenav .links a:hover {
+  color:  #003366;
+}
+
+.sidenav .container .closebtn {
+  position: absolute;
+  
+  right: 10px;
+  font-size: 36px;
+  margin-left: 40px;
+  text-decoration: none;
+    display: block;
+ color: #003366;
+
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  top:0;
+  left:0;   
+ position: fixed;
+
+z-index: 2;
+}
+
+.front .to
+{
+position: absolute;
+top: 250px;
+left: 600px;
+color: #fff; 
+    font-size: 30px;
+    line-height: 1.4em;
+    text-transform: Uppercase;
+    
+    font-family:  'Patrick Hand', cursive;
+    
+}
+
+.front .tot
+{
+position: absolute;
+top: 150px;
+left: 390px;
+color: #fff; 
+    font-size: 60px;
+    line-height: 1.4em;
+    text-transform: Uppercase;
+    letter-spacing: 1px;
+    font-family: 'Righteous', cursive;
+    font-weight: bolder;
+}
+.front .tot::selection{
+text-shadow: 0 0 0 #003366, 0.0025em 0.0025em 0 #003366, 0.005em 0.005em 0 #003366, 0.0075em 0.0075em 0 #003366, 0.01em 0.01em 0 #003366, 0.0125em 0.0125em 0 #003366, 0.015em 0.015em 0 #003366, 0.0175em 0.0175em 0 #003366, 0.02em 0.02em 0 #003366, 0.0225em 0.0225em 0 #003366, 0.025em 0.025em 0 #003366, 0.0275em 0.0275em 0 #003366, 0.03em 0.03em 0 #003366, 0.0325em 0.0325em 0 #003366, 0.035em 0.035em 0 #003366, 0.0375em 0.0375em 0 #003366, 0.04em 0.04em 0 #003366, 0.0425em 0.0425em 0 #003366, 0.045em 0.045em 0 #003366, 0.0475em 0.0475em 0 #003366, 0.05em 0.05em 0 #003366, 0.0525em 0.0525em 0 #fff, 0.055em 0.055em 0 #fff, 0.0575em 0.0575em 0 #fff, 0.06em 0.06em 0 #fff, 0.0625em 0.0625em 0 #fff, 0.065em 0.065em 0 #003366, 0.0675em 0.0675em 0 #003366, 0.07em 0.07em 0 #003366, 0.0725em 0.0725em 0 #003366, 0.075em 0.075em 0 #003366, 0.0775em 0.0775em 0 #003366, 0.08em 0.08em 0 #003366, 0.0825em 0.0825em 0 #003366, 0.085em 0.085em 0 #003366, 0.0875em 0.0875em 0 #fff, 0.09em 0.09em 0 #fff, 0.0925em 0.0925em 0 #fff, 0.095em 0.095em 0 #003366, 0.0975em 0.0975em 0 #003366, 0.1em 0.1em 0 #003366;
+background: transparent;
+}
+.front .to::selection{
+text-shadow: 0 0 0 #003366, 0.0025em 0.0025em 0 #003366, 0.005em 0.005em 0 #003366, 0.0075em 0.0075em 0 #003366, 0.01em 0.01em 0 #003366, 0.0125em 0.0125em 0 #003366, 0.015em 0.015em 0 #003366, 0.0175em 0.0175em 0 #003366, 0.02em 0.02em 0 #003366, 0.0225em 0.0225em 0 #003366, 0.025em 0.025em 0 #003366, 0.0275em 0.0275em 0 #003366, 0.03em 0.03em 0 #003366, 0.0325em 0.0325em 0 #003366, 0.035em 0.035em 0 #003366, 0.0375em 0.0375em 0 #003366, 0.04em 0.04em 0 #003366, 0.0425em 0.0425em 0 #003366, 0.045em 0.045em 0 #003366, 0.0475em 0.0475em 0 #003366, 0.05em 0.05em 0 #003366, 0.0525em 0.0525em 0 #fff, 0.055em 0.055em 0 #fff, 0.0575em 0.0575em 0 #fff, 0.06em 0.06em 0 #fff, 0.0625em 0.0625em 0 #fff, 0.065em 0.065em 0 #003366, 0.0675em 0.0675em 0 #003366, 0.07em 0.07em 0 #003366, 0.0725em 0.0725em 0 #003366, 0.075em 0.075em 0 #003366, 0.0775em 0.0775em 0 #003366, 0.08em 0.08em 0 #003366, 0.0825em 0.0825em 0 #003366, 0.085em 0.085em 0 #003366, 0.0875em 0.0875em 0 #fff, 0.09em 0.09em 0 #fff, 0.0925em 0.0925em 0 #fff, 0.095em 0.095em 0 #003366, 0.0975em 0.0975em 0 #003366, 0.1em 0.1em 0 #003366;
+}
+.front .oval {
+                width: 40px;  
+              height: 70px;
+              border: 2px solid white;
+            background: transparent;
+            border-radius: 40px;
+            position: absolute;
+            top: 550px;
+            left: 670px;
+  }
+  #iooo {
+position:absolute;
+  top:552px;
+  left:689px;
+  z-index: 5;
+  text-align: center;
+  font-size: 7px;
+  opacity: 1;
+  animation: fadeIn 1s ease-in both, fad 1s ease-in;
+animation-delay: 1s;
+   animation-iteration-count: infinite;
+}
+.round{
+  position: absolute;
+    top: 100px;
+    left: 300;
+  animation: pl 0.5s ease-in both;
+
+}
+@keyframes pl{
+  from{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+  }
+  to{
+        position: absolute;
+
+      top: 0px;
+    left: 0;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 1;
+  
+  
+  }
+  to {
+    opacity: 0;
+  
+  }
+}
+
+@keyframes fad {
+  from {
+    top:554px;
+  left:689px;
+  
+  }
+  to {
+    
+    top:600px;
+  left:689px;
+  
+  }
+}
+
+.a {	
+  width: 35px;
+  height: 5px;
+  background-color:  #003366;
+  margin: 6px 0;
+  z-index: 2;
+  
+}
+.container {
+	top:0;
+  position: absolute;
+  width: 100%;
+  max-width: 400px;
+}
+.button1 {
+	border: 3px solid  #003366;
+	float:right;
+	top:20px;
+	right:160px;
+	position: fixed;
+	height:40px;
+	width:90px;
+	background-color:  #003366;
+  font-size: 20px;
+  text-decoration: none;
+  color:white;
+cursor: pointer;
+border-radius: 3px;
+transition: .3s;
+}
+.button1:hover{
+  color: #003366;
+  background-color: #fff;
+}
+.button2{
+	border: 3px solid  #003366;
+	z-index: 2;
+	top:20px;
+	right:50px;
+	position: fixed;
+	height:40px;
+	width:90px;
+	background-color:  #003366;
+  font-size: 20px;
+  text-decoration: none;
+  color:white;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: .3s;
+}
+.button2:hover{
+  color: #003366;
+  background-color: #fff;
+}
+
+.sidenav .links{
+	margin-top: 160px;
+}
+.menu{
+	top:20px;
+	left:15px;
+	position: fixed;
+
+}
+
+.y{
+
+  font-family:'Montserrat', sans-serif;
+  
+  font-size: 40px;
+  
+  color: #fff;
+  position: absolute;
+  top: 300px;
+  left: 450px;
+}
+
+.y h1 span{
+  color: #ffcc00;
+  }
+	
+
+.side-links img{
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  width: 50px;
+  height: 50px;
+  display: block;
+  
+  z-index: 2;
+}
+
+.side-links img:hover {
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+} 
+.right{
+  z-index: 9;
+  
+  margin-top: 300px;
+  margin-left: 900px;
+}
+.textoo{
+  
+  z-index: 1;
+}
+
+.textoo .mainheading{
+  position: absolute;
+  top: 1100px;
+  left: 150px ;
+   font-size: 96px;
+  color:orange;
+  font-family: 'Bebas Neue', cursive;
+}
+.textoo .tagline{
+   position: absolute;
+  top: 1200px;
+  left: 150px;
+  font-size: 50px;
+  color:white;
+  font-family: 'Anton', sans-serif;
+
+}
+.textoo .lok{
+   position: absolute;
+  top: 1350px;
+  left: 150px;
+  font-size: 40px;
+  color:#66ff33;
+  font-family: 'Bebas Neue', cursive;
+
+}
+.textoo .rajya{
+   position: absolute;
+  top: 1350px;
+  left: 560px;
+  font-size: 40px;
+  color:#66ff33;
+  font-family: 'Bebas Neue', cursive;
+
+}
+.textoo .no1{
+   position: absolute;
+  top: 1400px;
+  left: 215px;
+  font-size: 40px;
+  color:#66ff33;
+  font-family: 'Bebas Neue', cursive;
+
+}
+.textoo .no2{
+   position: absolute;
+  top: 1400px;
+  left: 650px;
+  font-size: 40px;
+  color:#66ff33;
+  font-family: 'Bebas Neue', cursive;
+
+}
+map area{
+  outline: none;
+}
+
+::selection{
+  text-shadow: 0 0 0 #D7624E, 0.0025em 0.0025em 0 #D7624E, 0.005em 0.005em 0 #D7624E, 0.0075em 0.0075em 0 #D7624E, 0.01em 0.01em 0 #D7624E, 0.0125em 0.0125em 0 #D7624E, 0.015em 0.015em 0 #D7624E, 0.0175em 0.0175em 0 #D7624E, 0.02em 0.02em 0 #D7624E, 0.0225em 0.0225em 0 #D7624E, 0.025em 0.025em 0 #D7624E, 0.0275em 0.0275em 0 #D7624E, 0.03em 0.03em 0 #D7624E, 0.0325em 0.0325em 0 #D7624E, 0.035em 0.035em 0 #D7624E, 0.0375em 0.0375em 0 #D7624E, 0.04em 0.04em 0 #D7624E, 0.0425em 0.0425em 0 #D7624E, 0.045em 0.045em 0 #D7624E, 0.0475em 0.0475em 0 #D7624E, 0.05em 0.05em 0 #D7624E, 0.0525em 0.0525em 0 #D7624E, 0.055em 0.055em 0 #D7624E, 0.0575em 0.0575em 0 #D7624E, 0.06em 0.06em 0 #D7624E, 0.0625em 0.0625em 0 #D7624E, 0.065em 0.065em 0 #D7624E, 0.0675em 0.0675em 0 #D7624E, 0.07em 0.07em 0 #D7624E, 0.0725em 0.0725em 0 #D7624E, 0.075em 0.075em 0 #D7624E, 0.0775em 0.0775em 0 #D7624E, 0.08em 0.08em 0 #D7624E, 0.0825em 0.0825em 0 #D7624E, 0.085em 0.085em 0 #D7624E, 0.0875em 0.0875em 0 #D7624E, 0.09em 0.09em 0 #D7624E, 0.0925em 0.0925em 0 #D7624E, 0.095em 0.095em 0 #D7624E, 0.0975em 0.0975em 0 #D7624E, 0.1em 0.1em 0 #D7624E;
+}
+.dddd{
+  font-family: 'Anton', sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  position: absolute;
+  top : 2400px;
+  left: 600px;
+  color:#ff3300;
+}
+.ddd{
+  font-family: 'open-sans', sans-serif;
+  font-size: 40px;
+  
+  position: absolute;
+  top : 2555px;
+  left: 620px;
+  color:#003366;
+}
+
+.dd{
+  font-family:  'Oswald', sans-serif;
+  font-size: 40px;
+  
+  position: absolute;
+  top : 2610px;
+  left: 620px;
+  color:#003366;
+}
+.dd a{
+  color:red;
+}
+.d{
+  font-family:  'Lato', sans-serif;
+  font-size: 20px;
+  user-select: none;
+  position: absolute;
+  top : 2680px;
+  left: 620px;
+  color:#000;
+}
+.ll{
+  height: 130px;
+width: 190px;
+background-color: red;
+position: absolute;
+top : 2890px;
+  left: 600px;
+  word-wrap: break-word;
+  color: #fff;
+text-align:center;
+  font-size: 27px;
+  font-family:'open-sans', sans-serif;
+cursor: pointer;
+text-transform: uppercase;
+font-weight: bold;
+}
+.ll p{
+  margin-top: 27px;
+}
+.ll:hover{
+  background-color:#d90000; 
+}
+.l{
+  height: 130px;
+width: 190px;
+background-color: #003366;
+position: absolute;
+top : 2890px;
+  left: 850px;
+word-wrap: break-word;
+  color: #fff;
+text-align:center;
+  font-size: 27px;
+text-transform: uppercase;
+  font-family:'open-sans', sans-serif;
+  cursor: pointer;
+font-weight: bold;
+
+}
+.l p{
+  margin-top: 27px;
+}
+.l:hover{
+background-color: #002b57;
+}
+.lll{
+  height: 130px;
+width: 190px;
+background-color: #ff33cc;
+position: absolute;
+top : 2890px;
+  left: 1100px;
+word-wrap: break-word;
+  color: #fff;
+text-align:center;
+  font-size: 27px;
+text-transform: uppercase;
+  font-family:'open-sans', sans-serif;
+cursor: pointer;
+font-weight: bold;
+
+}
+.lll p{
+  margin-top: 27px;
+}
+.lll:hover{
+background-color: #d92bad;
+}
